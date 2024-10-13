@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQuery using webpack</title>
+<meta name="description"  content="練習用サイトです">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============index.jsにモジュールをまとめる===============-->
+<script defer src="main.js"></script>
+</head>
+<body>
+  
+  <div id="splash" style="display: none;">
+    <div id="splash-logo" style="display: none;">
+      <div class="bgextend bgLRextend">
+        <span class="bgappear">Beautycome</span>
+      </div>
+    </div>
+    <!--/splash--></div>
+    <div class="splashbg"></div><!---画面遷移用-->
+  <div id="wrapper">
+  <header id="header">
+    <h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Beautycome</span></span></a></h1>
+    <nav id="pc-nav">
+            <ul>
+                <li><a href="#vision"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Vision</span></span></a></li>
+                <li><a href="#service"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+                <li><a href="#about"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
+                <li><a href="#faq"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Faq</span></span></a></li>
+                <li><a href="#contact"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
+            </ul>
+    </nav>
+  </header>
+
+  <div id="top-main">
+    <p class="top-lead">
+      <span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">BEAUTY</span></span><br>
+      <span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Healthlife is</span></span><br>
+      <span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Making Future</span></span>
+    </p>
+  <!--/top-main--></div>
+
+  <div id="container">
+  <main id="main-area">
+    <section id="topics">
+        <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Topics</span></span></h2>
+        <ul class="slider">
+        <li><a href="#"><time datetime="2021-11-01">2024.9.01</time>TV「今日のライフスタイル」で紹介されました。</a></li>
+        <li><a href="#"><time datetime="2021-11-02">2024.9.10</time>美life9月号に掲載されました</a></li>
+        <li><a href="#"><time datetime="2021-11-03">2024.9.21</time>中途採用情報</a></li>
+        </ul>
+    </section>
+    
+    <section id="vision" class="scroll-point">
+            <div class="img flipLeftTrigger flipLeft"></div>
+            <div class="content flipLeftTrigger flipLeft">
+            <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Vision</span></span></h2>
+            <p class="vision-lead"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">女性が笑顔だと未来は明るい<br>迅速な対応をモットーにしています</span></span></p>
+    
+            <p>ハピカム株式会社は、<br>女性の健康を応援するためのコンサルティングや<br>プロテインの販売を行っています</p>
+            <p>あなたの「なりたい未来」を<br>一緒に叶えていきましょう。</p>
+            </div>
+    </section>
+        
+    <section id="service" class="scroll-point">
+        <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></h2>
+        <section class="service-area flex flex-wrap justify-between">
+        <figure class="img flipLeftTrigger"><img src="images/service_01.jpeg" alt=""></figure>
+        <div class="content flipLeftTrigger">
+            <div class="content-area">
+            <h3><span>Consulting</span>コンサルティング事業</h3>
+            <p>企業・個人目線でのコンサルティングを行います。</p>
+            <div class="btn"><a href="#" class="btnlinestretches3"><span>Detail</span></a></div>
+            </div>
+        </div>
+        </section>
+     
+        <section class="service-area flex flex-wrap justify-between">
+        <figure class="img flipLeftTrigger"><img src="images/service_01.jpeg" alt=""></figure>
+        <div class="content flipLeftTrigger">
+            <div class="content-area">
+            <h3><span>Development</span>卸売り事業</h3>
+            <p>主力商品である「レチノプロテイン」の卸販売を展開しています。</p>
+            <div class="btn"><a href="#" class="btnlinestretches3"><span>Detail</span></a></div>
+            </div>
+        </div>
+        </section>
+        
+        <section class="service-area flex flex-wrap justify-between">
+        <figure class="img flipLeftTrigger"><img src="images/service_01.jpeg" alt=""></figure>
+        <div class="content flipLeftTrigger">
+            <div class="content-area">
+            <h3><span>Education</span>定期販売</h3>
+            <p>企業・個人に向けた定期販売を行っています。</p>
+            <div class="btn"><a href="#" class="btnlinestretches3"><span>Detail</span></a></div>
+            </div>
+        </div>
+        </section>
+        
+    </section>
+        
+    <section id="about" class="scroll-point">
+        <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></h2>
+        <ul class="about-list fadeUpTrigger">
+            <li>
+            <dl>
+                <dt>会社名</dt><dd>Beautycome company</dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+                <dt>設立</dt><dd>2024年7月</dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+                <dt>資本金</dt><dd>2000万円</dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+                <dt>代表</dt><dd>田村みやこ</dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+                <dt>所在地</dt><dd>〒104-0000 東京都中央区1丁目1番1号</dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+                <dt>電話</dt><dd>03-1234-5678</dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+                <dt>主な取引先</dt><dd>ウェルネス株式会社<br>Y&amp;YCorporation<br>ヘルシーマーケット</dd>
+            </dl>
+            </li>
+        </ul>
+    </section>
+        
+    <div class="fadeUpTrigger fadeUp"><div class="faq-bg"></div></div>
+        
+    <section id="faq" class="scroll-point">
+        <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">FAQ</span></span></h2>
+        <ul class="accordion-area">
+          <li class="fadeUpTrigger">
+              <section class="open">
+                <h3 class="title">定期購入はいつでも解約できますか？</h3>
+                <div class="box">
+                  <p>可能です。マイページから解約手続きをお願いいたします。</p>
+                </div>
+              </section>
+            </li>
+            <li class="fadeUpTrigger">
+              <section>
+                <h3 class="title">地方ですが発注は可能でしょうか</h3>
+                <div class="box">
+                  <p>可能です。地域別郵送料をご確認ください。</p>
+                </div>
+              </section>
+            </li>
+            <li class="fadeUpTrigger">
+              <section>
+                <h3 class="title">定期購入の間隔を変更したいです</h3>
+                <div class="box">
+                  <p>マイページから変更ができます。間隔は30日、60日、90日からお選びいただけます。</p>
+                </div>
+              </section>
+              
+            </li>
+            <li class="fadeUpTrigger">
+              <section>
+                <h3 class="title">WEBメディアに記事を書いて頂くことは可能でしょうか？</h3>
+                <div class="box">
+                  <p>ご相談内容によっては可能です。まずはお気軽にお問い合わせフォームよりご相談ください。</p>
+                </div>
+              </section>
+              
+            </li>
+    
+          </ul>
+    </section>
+    <section id="contact" class="scroll-point">
+        <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2>
+        <form method="post" action="" enctype="multipart/form-data">
+            <ul class="form-list fadeUpTrigger">
+            <li>
+            <dl>
+            <dt><label for="division">会社名・部署名</label></dt>
+            <dd><input type="text" name="Division" id="division" size="60" value="">
+            </dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+            <dt><label for="name">ご担当者名</label></dt>
+            <dd><input type="text" name="Name" id="name" size="60" value="">
+            </dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd><input type="email" name="E-mail" id="email" size="60" value="">
+            </dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+            <dt><label for="tel">電話番号</label></dt>
+            <dd><input type="text" name="Tel" id="tel" size="60" value="">
+            </dd>
+            </dl>
+            </li>
+            <li>
+            <dl>
+            <dt><label for="msg">お問い合わせ内容</label></dt>
+            <dd><textarea name="Message" id="msg" cols="50" rows="5"></textarea>
+            </dd>
+            </dl>
+            </li>
+            </ul>
+    
+            <div class="submit-btn fadeUpTrigger"><input type="submit" name="submit" value="確認"></div>
+            </form>
+        
+    </section>
+    </main>
+  <!--/container--></div>
+
+  <footer id="footer">
+
+    <div class="openbtn">
+      <span></span>
+      <span>Menu</span>
+      <span></span>
+    </div>
+    <div id="g-nav" >
+    <div id="g-nav-list">
+            <ul>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:03-1234-5678">TEL : 03-1234-5678</a></li>
+            </ul>
+    </div>
+    </div> 
+        <p class="footer-logo">Beautycome</p>
+        <small>&copy; Beautycome company</small>
+      <p id="page-top"><a href="#">Top</a></p>	
+    </footer>
+  </div>
+  
+
+
+</body>
+</html>
